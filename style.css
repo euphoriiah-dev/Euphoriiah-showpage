@@ -9,6 +9,8 @@
 body{
     display: flex;
     flex-direction: column;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
 }
 a{
     text-decoration: none;
@@ -17,4 +19,17 @@ h1, h2, h3, h4{
 font-family: 'Raleway';
 }
 /*____________________________HEADER____________________________*/
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+}
+header .logo{
+    display: flex;
+    flex-direction: row;
+}
+header .logo img{
+width: 20%;
+}
 
