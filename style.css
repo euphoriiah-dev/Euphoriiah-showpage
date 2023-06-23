@@ -11,6 +11,8 @@ body{
     flex-direction: column;
     background: rgb(238,174,202);
     background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 a{
     text-decoration: none;
@@ -18,10 +20,16 @@ a{
 h1, h2, h3, h4{
 font-family: 'Raleway';
 }
+h1{
+    font-weight: 400;
+}
+li{
+    list-style: none;
+}
 /*____________________________HEADER____________________________*/
 header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     height: 20%;
 }
@@ -31,5 +39,16 @@ header .logo{
 }
 header .logo img{
 width: 20%;
+}
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav ul{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
