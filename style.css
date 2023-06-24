@@ -16,6 +16,10 @@ body{
 }
 a{
     text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #315373;
 }
 h1, h2, h3, h4{
 font-family: 'Raleway';
@@ -25,6 +29,7 @@ h1{
 }
 li{
     list-style: none;
+    font-size: 30px;
 }
 /*____________________________HEADER____________________________*/
 header {
@@ -49,6 +54,42 @@ header nav ul{
     width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    object-fit: contain;
+    justify-content: flex-end;
 }
+header nav li{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 55px;
+    margin-right: 20px;
+    transition: padding-right 1s ease;
+}
+header i{
+    background-color: white;
+    padding: 9px;
+    border-radius: 25px;
+}
+header nav p{
+    margin: 5px 0 0 25px;
+    font-size: 30px;
+    font-family: 'Raleway';
+    transition: left 1s ease;
+}
+header nav li:hover{
+    background-color: white;
+    border-radius: 25px;
+    padding-right: 200px;
+}
+header li p:hover{
+    left: 100px;
+    display: block;
+    z-index: 2;
+    color: black;
+}
+header a{
+    display : flex;
+    flex-direction: row;
+}
+
 
