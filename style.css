@@ -29,24 +29,36 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 20%;
+    height: 30%;
+    border-bottom: #ffffff solid 1px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.659); ;
 }
 header .logo{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    margin: -30px 0 0 -20px;
+}
+header .img-container{
+  width: 200px;
+  object-fit: contain;
 }
 header .logo img{
-width: 20%;
+width: 100%;
 }
 /*____________HEADER NAVIGATION BUTTONS______________*/
-h1 {
-    font-family: verdana, sans-serif;
+p {
+    font-family: 'Raleway';
     font-weight: bold;
     text-align: center;
     position: relative;
-    top: -10px;
   }
-
+nav{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
 nav, nav div{
     display: flex;
     flex-direction: row;
@@ -68,11 +80,7 @@ nav i{
     position: fixed;
     z-index: 3;
 }
-#btn1 {
-    top: 100px;
-  }
-  
-  div.button {
+  div #btn-1 {
     background-color: #ffffff;
     border: none;
     border-radius: 30px;
@@ -84,18 +92,18 @@ nav i{
     transition: .7s ease;
   }
   
-  div.button:hover {
+  div #btn-1:hover {
     background-color: #ffffff;
     width: 125px;
     border-radius: 30px;
   }
   
-  div.button:active {
+  div #btn-1:active {
     background-color: #ffffff;
     transition: 0s;
     color: #ecf0f1;
   }
-  nav .button .btn-background{
+  nav #btn-1 .btn-background{
     background-color: #ffffff;
     width: 50px;
     height: 50px;
@@ -104,6 +112,9 @@ nav i{
     position: fixed;
     left: 30px;
     top: 10px;
+  }
+  #btn-2{
+    display: none;
   }
 
 
