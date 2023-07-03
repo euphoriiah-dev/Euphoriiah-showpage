@@ -41,7 +41,7 @@ header .logo{
     margin: -30px 0 0 -20px;
 }
 header .img-container{
-  width: 200px;
+  width: 100px;
   object-fit: contain;
 }
 header .logo img{
@@ -58,6 +58,7 @@ nav{
   width: 100%;
   display: flex;
   flex-direction: row;
+  height: auto;
 }
 nav, nav div{
     display: flex;
@@ -80,39 +81,42 @@ nav i{
     position: fixed;
     z-index: 3;
 }
-  div #btn-1 {
-    background-color: #ffffff;
-    border: none;
-    border-radius: 30px;
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    left: 30px;
-    top: 10px;
-    transition: .7s ease;
+nav .btn-container{
+  display: flex;
+  flex-direction: row;
+}
+div .button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  transition: .7s ease;
   }
-  
-  div #btn-1:hover {
+nav .button .btn-background{
+  background-color: #ffffff;
+  border-radius: 25px;
+  z-index: 2;
+  padding: 25px;
+  position: fixed;
+}
+nav #btn-1 .btn-background{
+  top: 1em;
+  left: 1em;
+} 
+  div .button:hover {
     background-color: #ffffff;
     width: 125px;
     border-radius: 30px;
   }
   
-  div #btn-1:active {
+  div .button:active {
     background-color: #ffffff;
     transition: 0s;
     color: #ecf0f1;
   }
-  nav #btn-1 .btn-background{
-    background-color: #ffffff;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    z-index: 2;
-    position: fixed;
-    left: 30px;
-    top: 10px;
-  }
+  
   #btn-2{
     display: none;
   }
