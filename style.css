@@ -48,78 +48,40 @@ header .logo img{
 width: 100%;
 }
 /*____________HEADER NAVIGATION BUTTONS______________*/
-p {
-    font-family: 'Raleway';
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-  }
-nav{
-  width: 100%;
+/*______BUTTON GENERAL STYLE_____*/
+header nav{
+  width: auto;
   display: flex;
   flex-direction: row;
-  height: auto;
 }
-nav, nav div{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+header nav .btn-container{
+  display: flex;
+  flex-direction: row;
 }
-nav div{
-padding: 1em;
+header nav .button{
+  position: sticky;
+}
+header nav i{
+position: relative;
+margin: 20px 0 0 25px;
 overflow: hidden;
+width: 1.5em;
+border-radius: 25px;
+padding: 10px 30px 10px 10px;
+border: solid #ffffff 1px;
+box-shadow: 1px 1px 6px rgb(0, 0, 0);
+transition-duration: 100ms;
 }
-nav p{
-    position: relative;
-    left: -95px;
-}
-nav:hover p{  
-    left: 35px;
-    transition: .7s ease;
-}
-nav i{
-    position: fixed;
-    z-index: 3;
-}
-nav .btn-container{
+header nav i p{
+  font-family: 'Raleway';
+  font-weight: 400;
+  margin: -15px 0 0 30px;
   display: flex;
-  flex-direction: row;
 }
-div .button {
+/*BUTTON HOVER / ANIMATION*/
+header nav i:hover{
+  width: 70%;
+  transition: 1s ease;
+  overflow: visible;
   background-color: #ffffff;
-  border: none;
-  border-radius: 30px;
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  transition: .7s ease;
-  }
-nav .button .btn-background{
-  background-color: #ffffff;
-  border-radius: 25px;
-  z-index: 2;
-  padding: 25px;
-  position: fixed;
 }
-nav #btn-1 .btn-background{
-  top: 1em;
-  left: 1em;
-} 
-  div .button:hover {
-    background-color: #ffffff;
-    width: 125px;
-    border-radius: 30px;
-  }
-  
-  div .button:active {
-    background-color: #ffffff;
-    transition: 0s;
-    color: #ecf0f1;
-  }
-  
-  #btn-2{
-    display: none;
-  }
-
-
-
