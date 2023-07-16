@@ -142,17 +142,43 @@ border-radius: 25px;
 main .slider-button{
   position: absolute;
   top: 30em;
-  left: 45em;
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 25px;
-  transform: scale(1);
-  box-shadow: 1px 1px 6px rgb(0, 0, 0);
+  left: 40em;
 }
-main .slider-button:hover{
-  transform: scale(1.1);
-  transition-duration: 600ms;
-}
-main .slider-button p{
+main button{
   font-family: 'Raleway';
+  font-weight: 200;
+}
+main .slider-button button p{
+  margin: 10px;
+  font-family: 'Raleway';
+  font-weight: 300;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    transform: scale(1);
+}
+.btn-hover.color-7 {
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+.btn-hover:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+    transform: scale(1.1);
+}
+
+.btn-hover:focus {
+    outline: none;
 }
