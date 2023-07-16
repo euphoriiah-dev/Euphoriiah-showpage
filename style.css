@@ -111,9 +111,14 @@ main{
 }
 main .slider-container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin: 3em 0 0 0;
+  width: 30%;
+  border: #ffffff solid 1px;
+  border-radius: 25px;
+  align-self: center;
+  padding: 5px;
 }
 ul {
   display: flex;
@@ -125,12 +130,29 @@ ul {
 width: 450px;
 height: 250px;
 overflow: hidden;
-border-radius: 3px;
+border-radius: 25px;
 box-shadow: 3px 10px 15px 0px rgba(0,0,0,0.4);
 }
 
-img {
+main .slider-container img {
 width: 450px;
 height: 250px;
-border-radius: 3px;
+border-radius: 25px;
+}
+main .slider-button{
+  position: absolute;
+  top: 30em;
+  left: 45em;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 25px;
+  transform: scale(1);
+  box-shadow: 1px 1px 6px rgb(0, 0, 0);
+}
+main .slider-button:hover{
+  transform: scale(1.1);
+  transition-duration: 600ms;
+}
+main .slider-button p{
+  font-family: 'Raleway';
 }
