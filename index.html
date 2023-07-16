@@ -21,6 +21,8 @@
     <script src="https://kit.fontawesome.com/7bce923a38.js" crossorigin="anonymous"></script>
     <!--CSS IMPORTATION-->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-ext.scss">
+    <!--JS IMPORTS-->  
 </head>
 <body>
 <!--------------------------------------------------HEADER-------------------------------------------------------->
@@ -89,30 +91,19 @@
     </header>
 <!----------------------------------------MAIN-------------------------------------------------->
     <main>
-        <!------------------------ASIDE WITH DYNAMIC BLOCKS------------------------->
-        <aside id="aside-1">
-            <article id="dynamic-article-1" class="dynamic-article">
-                <div></div>
-            </article>
-            <article id="dynamic-article-2" class="dynamic-article">
-                <div></div>
-            </article>
-            <article id="dynamic-article-3" class="dynamic-article">
-                <div></div>
-            </article>
-        </aside>
-        <!---------------------------------MAIN PART OF THE SITE------------------------------->
-        <section id="main-section">
-            <div class="slider-container">
-                <div id="slider-1" class="silder"><!--JS SLIDER CONTENT HERE--></div>
+        <div class="slider-container">
+            <div class="slider">
+                <ul>
+                <li><img src="./assets/img/gallery/photo_1_residence_tainos.webp" alt="tainos cottages guadeloupe" class="gallery-pictures" /></li>
+                <li><img src="./assets/img/gallery/photo_2_pearl_beach.webp" alt="beach in guadeloupe" class="gallery-pictures"/></li>
+                <li><img src="./assets/img/gallery/photo_3_puy_de_dome.webp" alt="puy de dome view" class="gallery-pictures"/></li>
+                <li><img src="./assets/img/gallery/photo_4_pink_tulip.webp" alt="pink tulip" class="gallery-pictures"/></li>
+                </ul>
             </div>
-        </secion>
-        <section id="picture-wall-container">
-            <div id="picture-wall">
-                <!--JS PICTURE WALL-->
-            </div>
-        </section>
+        </div>
+          <script src="script.js"></script>
     </main>
+    
 <!--------------------------------------------------------------FOOTER------------------------------------------------------>
     <!--<footer>
         <div class="socials">
