@@ -21,7 +21,7 @@ a{
 a:hover{
     color: #315373;
 }
-h1, h2, h3, h4{
+h1, h2, h3, h4, p{
 font-family: 'Raleway';
 }
 /*____________________________HEADER____________________________*/
@@ -262,7 +262,7 @@ main .cv-part{
 }
 main .cv-part h2{
 position: relative;
-top: 4em;
+top: 2em;
 left: 4em;
 z-index: 0;
 font-family: 'Merriweather';
@@ -281,6 +281,14 @@ background: linear-gradient(
     -text-fill-color: transparent;
     background-size: 500% auto;
     animation: textShine 5s ease-in-out infinite alternate;
+}
+main .info-container #subtitle-1{
+  font-weight: 400;
+  margin: 4em 0 0 7em;
+}
+main .info-container #subtitle-2{
+  font-weight: 300;
+  margin: 2em 0 0 7em;
 }
 @keyframes textShine {
   0% {
@@ -309,3 +317,4 @@ main section .profile-picture{
   z-index: 0;
   position: relative;
 }
+
