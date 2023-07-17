@@ -39,6 +39,7 @@ header {
     background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
     background-repeat: no-repeat;
     background-attachment: fixed;
+    z-index: 2;
 }
 header .logo{
     width: 100%;
@@ -250,11 +251,44 @@ flex-direction: row;
 .scrolled.slide-right {
   animation: slide-in-right 1s ease-in-out both;
 } */
-/*__________________ALL INSIDE LEFT BLOCK__________________*/
-main section .cv-part{
+/*__________________CV PART__________________*/
+main .cv-part{
   display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
+  position: relative;
+  top: 10em;
+}
+main .cv-part h2{
+position: relative;
+top: 4em;
+left: 4em;
+z-index: 0;
+font-family: 'Merriweather';
+font-weight: 200;
+font-size: 30px;
+background: linear-gradient(
+        to right,
+        rgb(255, 255, 255) 20%,
+        #00affa 30%,
+        #628695 70%,
+        #da4a86 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
 }
 main section .cv-container{
   display: flex;
@@ -269,5 +303,9 @@ main section .profile-picture{
   overflow: hidden;
   object-fit: contain;
   border-radius: 100px;
-  margin: 12em 0 0 5em;
+  top: 4em;
+  left: 5em;
+  border: solid 1px #ffffff;
+  z-index: 0;
+  position: relative;
 }
