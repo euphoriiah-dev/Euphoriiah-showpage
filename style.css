@@ -197,7 +197,7 @@ main .scroll-container{
 }
 
 .scroll-container:nth-of-type(1) {
-  background-color: #eabfe2;
+  background-color: #fdfdfd00;
 }
 
 .scroll-container:nth-of-type(even) {
@@ -223,7 +223,7 @@ main .scroll-container{
 /*____JS STYLE_____*/
 .js-scroll {
   opacity: 0;
-  transition: opacity 500ms;
+  transition: opacity 1s;
 }
 
 .js-scroll.scrolled {
@@ -231,10 +231,10 @@ main .scroll-container{
 }
 
 .scrolled.fade-in {
-  animation: fade-in 1s ease-in-out both;
+  animation: fade-in 2s ease-in-out both;
 }
 
-.scrolled.fade-in-bottom {
+/*.scrolled.fade-in-bottom {
   animation: fade-in-bottom 1s ease-in-out both;
 }
 
@@ -244,7 +244,7 @@ main .scroll-container{
 
 .scrolled.slide-right {
   animation: slide-in-right 1s ease-in-out both;
-}
+} */
 /*__________________ALL INSIDE LEFT BLOCK__________________*/
 main section .left-block{
   display: flex;
