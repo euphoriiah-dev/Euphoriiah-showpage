@@ -170,7 +170,7 @@ main .slider-button button p{
     transform: scale(1);
 }
 .btn-hover.color-7 {
-  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #ceb7ca);
   box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
 }
 .btn-hover:hover {
@@ -181,4 +181,84 @@ main .slider-button button p{
 
 .btn-hover:focus {
     outline: none;
+}
+
+/*_MAIN & SCROLLING ANIMATION_*/
+main .scroll-container{
+  margin: 21em 0 0 0;
+}
+.scroll-container {
+  height: 100vh;
+  min-height: 450px;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.scroll-container:nth-of-type(1) {
+  background-color: #eabfe2;
+}
+
+.scroll-container:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.scroll-element,
+.scroll-caption {
+  width: 50%;
+}
+
+.scroll-element {
+  min-height: 300px;
+  height: 100%;
+  background-color: #e5e1e1;
+  border-radius: 25px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.63);
+}
+
+.scroll-caption {
+  margin: 1rem;
+}
+/*____JS STYLE_____*/
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.fade-in {
+  animation: fade-in 1s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+/*__________________ALL INSIDE LEFT BLOCK__________________*/
+main section .left-block{
+  display: flex;
+}
+main section .left-block img{
+  position: relative;
+  width: 300px;
+  left: -1em;
+  
+}
+main section .left-block .profile-picture{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  object-fit: contain;
+  border-radius: 100px;
 }
