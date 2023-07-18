@@ -290,6 +290,27 @@ main .info-container #subtitle-2{
   font-weight: 300;
   margin: 2em 0 0 7em;
 }
+main .info-buttons{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 15em;
+  right: 45em;
+}
+
+main .btn-download i{
+  background-color: #fff;
+  padding: 10px 14px 10px 14px;
+  border-radius: 25px;
+}
+main .btn-download i:hover{
+  transition: 300ms ease;
+  overflow: visible;
+  background-color: #ffffff;
+}
+main .info-buttons i{
+  font-size: 20px;
+}
 @keyframes textShine {
   0% {
       background-position: 0% 50%;
