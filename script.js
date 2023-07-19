@@ -1,3 +1,19 @@
+// MAKE SPINNER DISEAPPEAR
+var spinner = document.getElementById('load-spinner');
+spinner.style.display = 'block';
+
+// HIDE LOAD SPINNER USING A FADE OUT 
+setTimeout(function() {
+  spinner.classList.add('fade-out');
+}, 3000);
+
+// HIDE THE SPINNER FUNCTION
+setTimeout(function() {
+  spinner.style.display = 'none';
+}, 3500); 
+
+
+
 // SLIDESHOW SETTINGS
 let currentSlide = 0; // Initialize slider counter to 0
 
