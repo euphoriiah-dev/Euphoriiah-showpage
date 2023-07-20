@@ -41,6 +41,7 @@ header .logo{
     flex-direction: row;
     justify-content: center;
     position: relative;
+    top: 10%;
 }
 header .img-container{
   width: 150px;
@@ -54,12 +55,14 @@ width: 100%;
 /*______BUTTON GENERAL STYLE_____*/
 header nav{
   position: relative;
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  top: 4em;
+  top: 60%;
+  left: -5%;
+
 }
 header nav .btn-container{
   display: flex;
@@ -97,7 +100,7 @@ header section{
     align-items: center;
     background-color: #ffffff00;
     position: relative;
-    top: 2em;
+    top: 40%;
   }
   header section i{
     font-size: 30px;
@@ -239,7 +242,7 @@ main{
   main .cv-part h2{
   position: absolute;
   top: 0.5em;
-  left: 5em;
+  left: 35%;
   z-index: 0;
   font-family: 'Merriweather';
   font-weight: 200;
@@ -264,7 +267,7 @@ main{
   }
   main .info-container #subtitle-1{
     font-weight: 400;
-    margin: 3.5em 0 0 4em;
+    margin: 4em 0 0 4em;
     width: 60%;
     position: absolute;
   }
