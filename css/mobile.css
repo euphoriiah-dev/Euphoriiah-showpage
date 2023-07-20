@@ -267,15 +267,16 @@ main{
   }
   main .info-container #subtitle-1{
     font-weight: 400;
-    margin: 4em 0 0 4em;
-    width: 60%;
+    margin: 4em 0 0 10%;
+    width: 50%;
     position: absolute;
   }
   main .info-container #subtitle-2{
     font-weight: 300;
     margin: 8em 0 0 0em;
-    width: 70%;
+    width: 75%;
     position: absolute;
+    left: 2em;
   }
   main .info-buttons{
     display: flex;
@@ -284,6 +285,7 @@ main{
     width: 100%;
     top: 20em;
     margin: 0 0 0 5%;
+    flex-direction: column;
   }
   main .info-buttons a{
     display: flex;
