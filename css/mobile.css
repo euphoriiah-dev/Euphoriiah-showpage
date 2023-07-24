@@ -117,8 +117,8 @@ main{
   }
   main .slider-button{
     position: absolute;
-    left: 8.5em;
-    top: 60em;
+    left: 6.5em;
+    top: 49.9em;
   }
   main button{
     font-family: 'Raleway';
@@ -182,11 +182,13 @@ main{
   flex-direction: row;
   }
   .scroll-element {
-    width: 380px;
-    height: 170px;
+    width: 210px;
+    height: 55px;
     background-color: #e5e1e124;
     border-radius: 1px;
     box-shadow: 1px 1px 15px rgba(251, 251, 251, 0.63);
+    border-radius: 25px;
+    margin: -25em 0 0 -3em;
   }
   /*____JS STYLE_____*/
   .js-scroll {
@@ -212,6 +214,7 @@ main{
   height: 50px;
   border-radius: 25px;
   }
+
   main .scroll-caption .qr-code img{
     width: 100%;
     object-fit: contain;
