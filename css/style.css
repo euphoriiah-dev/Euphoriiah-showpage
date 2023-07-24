@@ -153,7 +153,7 @@ border-radius: 25px;
 padding: 10px 30px 10px 10px;
 border: solid #ffffff 1px;
 box-shadow: 1px 1px 6px rgb(0, 0, 0);
-transition-duration: 200ms;
+transition-duration: 600ms;
 z-index: 2;
 }
 header nav i p{
@@ -496,6 +496,7 @@ main .scroll-caption .qr-code{
 width: 120px;
 height: 50px;
 border-radius: 25px;
+margin: 2.5em 0 0 0;
 }
 main .scroll-caption .qr-code img{
   width: 100%;
@@ -515,9 +516,18 @@ main .stuff-container .stuff-icons{
 }
 main .stuff-container .stuff-icons .adobe-icons{
   width: 50px;
-  height: 50px;
+  height: 48px;
   object-fit: contain;
   margin: 0 0 2em 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgb(104, 104, 104);
+  transform: scale(1);
+  transition: 1s;
+}
+main .stuff-container .stuff-icons .adobe-icons:hover{
+transform: scale(1.1);
+transition-duration: 600ms;
+box-shadow: 1px 1px 10px rgb(255, 255, 255);
 }
 main .stuff-container .stuff-icons i{
   font-size: 30px;
@@ -539,6 +549,7 @@ main .stuff-container .stuff-icons .photo-icon{
  margin: 0 0 2em 0;
  overflow: hidden;
  transform: scale(1);
+ transition: 1s;
 }
 main .stuff-container .stuff-icons .photo-icon:hover {
   transform: scale(1.1);
@@ -554,4 +565,5 @@ main .stuff-container .stuff-icons i p{
 }
 main .stuff-container .stuff-icons img{
 width: 50px;
+margin: 0px;
 }
