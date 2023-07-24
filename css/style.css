@@ -1,4 +1,14 @@
 @media (min-width: 992px){
+  :root {
+    --size: 50vmin;
+    --white: #fff;
+    --blue: #3051f1;
+    --purple: #c92bb7;
+    --red: #f73344;
+    --orange: #fa8e37;
+    --yellow: #fcdf8f;
+    --yellow_to: #fbd377;
+  }
 /*__________________GENERAL SETTINGS_____________________*/
 *{
     margin: 0;
@@ -105,7 +115,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 150px;
+    height: 100px;
     border-bottom: #ffffff solid 1px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.659);
     overflow: hidden;
@@ -169,22 +179,6 @@ header nav i:hover{
   overflow: visible;
   background-color: #ffffff;
 }
-/*__________________________CONTACT BAR________________________*/
-header section{
-  width: 100%;
-  height: 50px;
-  background-color: #ffffffbc;
-  margin: .6em 0 0 0;
-  border-top: #8d8d8d solid 1px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-header section i{
-  font-size: 30px;
-  margin: 5px;
-}
 /*_____________________________________________MAIN___________________________________*/
 main{
   display: flex;
@@ -197,7 +191,8 @@ main .cv-part{
   width: 100%;
   height: 100%;
   position: relative;
-  top: 6em;
+  top: 10em;
+  left: 10em;
 }
 main .cv-part h2{
 position: relative;
@@ -239,7 +234,7 @@ main .info-buttons{
   flex-direction: row;
   position: relative;
   top: 18em;
-  right: 29em;
+  right: 32em;
   justify-content: space-between;
   width: 100%;
 }
@@ -300,13 +295,99 @@ main section .profile-picture{
   z-index: 0;
   position: relative;
 }
+main .socials-links{
+  position: absolute;
+  top: 10em;
+  align-self: center;
+}
+main .socials-links ul {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main .socials-links ul li {
+  list-style: none;
+}
+
+main .socials-links ul li a {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  margin: 0 50px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+  box-shadow: 1px 1px 6px rgb(0, 0, 0);
+}
+main .socials-links ul li a:hover{
+  box-shadow: 1px 1px 10px rgb(238, 223, 255);
+}
+main .socials-links ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+main .socials-links ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+main .socials-links ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 169, 207);
+  transition: .5s;
+  z-index: 2;
+}
+
+main .socials-links ul li a:hover:before {
+  top: 0;
+}
+
+main .socials-links ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+main .socials-links ul li:nth-child(2) a:before{
+  background: #55acee;
+}
+
+main .socials-links ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+main .socials-links ul li:nth-child(4) a:before {
+  background: radial-gradient(
+    circle farthest-corner at 28% 100%,
+    var(--yellow) 0%,
+    var(--yellow_to) 10%,
+    var(--orange) 22%,
+    var(--red) 35%,
+    transparent 65%
+  ), linear-gradient(145deg, var(--blue) 10%, var(--purple) 70%);
+}
 /*________SCROLL ARROW ANIMATION_____________*/
 .arrows {
   width: 60px;
   height: 72px;
   position: absolute;
   left: 50%;
-  top: 75%;
+  top: 50%;
   margin-left: -30px;
   bottom: 20px;
   align-self: center;
@@ -352,6 +433,40 @@ main section .profile-picture{
 }
 
 }
+
+/*_MAIN & SCROLLING ANIMATION_*/
+main .scroll-container{
+  margin: 25em 0 0 0;
+}
+.scroll-container {
+  height: 100vh;
+  min-height: 450px;
+  padding: 1em 1em;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.scroll-container:nth-of-type(1) {
+  background-color: #fdfdfd00;
+}
+
+.scroll-container:nth-of-type(even) {
+flex-direction: row;
+}
+
+.scroll-element {
+  width: 50%;
+}
+
+.scroll-element {
+  width: 280px;
+  height: 530px;
+  background-color: #e5e1e124;
+  border-radius: 1px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.63);
+  margin: 2em 0 0 5em;
+}
 /*_____________________________SLIDESHOW___________________________*/
 main .slider-container{
   flex-direction: column;
@@ -385,7 +500,7 @@ object-fit: cover;
 main .slider-button{
   position: absolute;
   left: 8.5em;
-  top: 91.5em;
+  top: 88em;
   z-index: 4;
 }
 main button{
@@ -425,40 +540,6 @@ main .slider-button button p{
 
 .btn-hover:focus {
     outline: none;
-}
-
-/*_MAIN & SCROLLING ANIMATION_*/
-main .scroll-container{
-  margin: 25em 0 0 0;
-}
-.scroll-container {
-  height: 100vh;
-  min-height: 450px;
-  padding: 1em 1em;
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.scroll-container:nth-of-type(1) {
-  background-color: #fdfdfd00;
-}
-
-.scroll-container:nth-of-type(even) {
-flex-direction: row;
-}
-
-.scroll-element {
-  width: 50%;
-}
-
-.scroll-element {
-  width: 280px;
-  height: 530px;
-  background-color: #e5e1e124;
-  border-radius: 1px;
-  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.63);
-  margin: 2em 0 0 5em;
 }
 /*____JS STYLE_____*/
 .js-scroll {

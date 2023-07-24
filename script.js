@@ -26,7 +26,7 @@ function startSlider() {
     return;
   }
 
-  let images = document.querySelector("ul");
+  let images = document.querySelector("ul.slideshow-ul");
   images.style.transform = `translateX(-${currentSlide * 250}px)`;
 
 // For the slideshow always return to the first slide after reaching the last img
