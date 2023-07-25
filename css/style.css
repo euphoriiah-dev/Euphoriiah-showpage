@@ -222,6 +222,7 @@ background: linear-gradient(
 }
 main .info-container{
   width: 100%;
+  height: 50%;
 }
 main .info-container #subtitle-1{
   font-weight: 400;
@@ -291,7 +292,7 @@ main section .profile-picture{
   object-fit: contain;
   border-radius: 100px;
   top: 4em;
-  left: 15em;
+  left: 40%;
   border: solid 1px #ffffff;
   z-index: 0;
   position: relative;
@@ -387,7 +388,7 @@ main .socials-links ul li:nth-child(4) a:before {
   width: 60px;
   height: 72px;
   position: absolute;
-  left: 50%;
+  left: 20em;
   top: 40%;
   margin-left: -30px;
   bottom: 20px;
@@ -481,7 +482,7 @@ main .slider-container{
   display: flex;
   position: absolute;
 }
-ul {
+main .slider ul {
   display: flex;
   list-style: none;
   transition: all 1s ease;
@@ -557,13 +558,14 @@ main .slider-button button p{
 }
 main .scroll-caption p{
 width: 100%;
+overflow-wrap: break-word;
 }
 main .scroll-caption{
 border: solid white 1px;
 background-color: rgba(255, 255, 255, 0.338);
 padding: 20px;
 width: 30%;
-height: 50%;
+height: 20em;
 border-radius: 25px;
 box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.63);
 position: absolute;
@@ -574,13 +576,13 @@ main .scroll-caption h3{
   color: #ffffff;
   margin: 0 0 1em 0;
 }
-main .scroll-caption .qr-code{
+main .qr-code{
 width: 120px;
 height: 50px;
 border-radius: 25px;
-margin: 2.5em 0 0 0;
+position: absolute;
 }
-main .scroll-caption .qr-code img{
+main .qr-code img{
   width: 100%;
   object-fit: contain;
   border-radius: 15px;

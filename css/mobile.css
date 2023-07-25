@@ -26,7 +26,7 @@ header {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
-    height: 200px;
+    height: 150px;
     border-bottom: #ffffff solid 1px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.659);
     background: rgb(238,174,202);
@@ -41,7 +41,6 @@ header .logo{
     flex-direction: row;
     justify-content: center;
     position: relative;
-    top: 10%;
 }
 header .img-container{
   width: 150px;
@@ -60,8 +59,8 @@ header nav{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  top: 60%;
-  left: -5%;
+  top: 30%;
+  left: -2%;
 
 }
 header nav .btn-container{
@@ -92,147 +91,98 @@ display: none;
 #btn-1 i{
 width: 1.5em;
 }
-/*__________________________CONTACT BAR________________________*/
-header section{
-    width: 100%;
-    height: 50px;
-    flex-direction: row;
-    align-items: center;
-    background-color: #ffffff00;
-    position: relative;
-    top: 40%;
-  }
-  header section i{
-    font-size: 30px;
-    margin: 5px;
-  }
+
   /*_____________________________________________MAIN___________________________________*/
-/*___________MAIN PAGE SLIDESHOW GALLERY_________________*/
 main{
     display: flex;
     flex-direction: column;
   }
-  main .slider-container{
-    display: none;
-  }
-  main .slider-button{
+  main .socials-links{
     position: absolute;
-    left: 6.5em;
-    top: 49.9em;
-  }
-  main button{
-    font-family: 'Raleway';
-    font-weight: 200;
-  }
-  main .slider-button button p{
-    margin: 10px;
-    font-family: 'Raleway';
-    font-weight: 300;
-  }
-  
-  .btn-hover {
-      width: 200px;
-      font-size: 16px;
-      font-weight: 600;
-      color: #fff;
-      cursor: pointer;
-      height: 55px;
-      text-align:center;
-      border: none;
-      background-size: 300% 100%;
-      transition: all .4s ease-in-out;
-      transform: scale(1);
-      border-radius: 25px;
-      
-  }
-  .btn-hover.color-7 {
-    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #ceb7ca);
-    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
-  }
-  .btn-hover:hover {
-      background-position: 100% 0;
-      transition: all .4s ease-in-out;
-      transform: scale(1.1);
-  }
-  
-  .btn-hover:focus {
-      outline: none;
-  }
-  
-  /*_MAIN & SCROLLING ANIMATION_*/
-  main .scroll-container{
-    margin: 15em 0 0 0;
-  }
-  .scroll-container {
-    height: 100vh;
-    min-height: 450px;
-    padding: 1em 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
     align-self: center;
+    top: 18em;
+  }
+  main .socials-links ul {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
-  .scroll-container:nth-of-type(1) {
-    background-color: #fdfdfd00;
+  main .socials-links ul li {
+    list-style: none;
   }
   
-  .scroll-container:nth-of-type(even) {
-  flex-direction: row;
+  main .socials-links ul li a {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    margin: 0 20px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+    box-shadow: 1px 1px 6px rgb(0, 0, 0);
   }
-  .scroll-element {
-    width: 210px;
-    height: 55px;
-    background-color: #e5e1e124;
-    border-radius: 1px;
-    box-shadow: 1px 1px 15px rgba(251, 251, 251, 0.63);
-    border-radius: 25px;
-    margin: -25em 0 0 -3em;
+  main .socials-links ul li a:hover{
+    box-shadow: 1px 1px 10px rgb(238, 223, 255);
   }
-  /*____JS STYLE_____*/
-  .js-scroll {
-    opacity: 0;
-    transition: opacity 1s;
+  main .socials-links ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
   }
   
-  .js-scroll.scrolled {
-    opacity: 1;
+  main .socials-links ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
   }
   
-  .scrolled.fade-in {
-    animation: fade-in 2s ease-in-out both;
-  }
-  main .scroll-caption p{
-  width: 100%;
-  }
-  main .scroll-caption{
-    display: none;
-  }
-  main .scroll-caption .qr-code{
-  width: 120px;
-  height: 50px;
-  border-radius: 25px;
-  }
-
-  main .scroll-caption .qr-code img{
+  main .socials-links ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
-    object-fit: contain;
-    border-radius: 15px;
-    margin: 1em 0 0 9em;
-    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.63);
-  }
-  /*.scrolled.fade-in-bottom {
-    animation: fade-in-bottom 1s ease-in-out both;
+    height: 100%;
+    background: rgb(255, 169, 207);
+    transition: .5s;
+    z-index: 2;
   }
   
-  .scrolled.slide-left {
-    animation: slide-in-left 1s ease-in-out both;
+  main .socials-links ul li a:hover:before {
+    top: 0;
   }
   
-  .scrolled.slide-right {
-    animation: slide-in-right 1s ease-in-out both;
-  } */
+  main .socials-links ul li:nth-child(1) a:before{
+    background: #3b5999;
+  }
+  
+  main .socials-links ul li:nth-child(2) a:before{
+    background: #55acee;
+  }
+  
+  main .socials-links ul li:nth-child(3) a:before {
+    background: #0077b5;
+  }
+  
+  main .socials-links ul li:nth-child(4) a:before {
+    background: radial-gradient(
+      circle farthest-corner at 28% 100%,
+      var(--yellow) 0%,
+      var(--yellow_to) 10%,
+      var(--orange) 22%,
+      var(--red) 35%,
+      transparent 65%
+    ), linear-gradient(145deg, var(--blue) 10%, var(--purple) 70%);
+  }
   /*__________________CV PART__________________*/
   main .cv-part{
     display: flex;
@@ -240,7 +190,8 @@ main{
     width: 100%;
     height: 100%;
     position: relative;
-    top: 8em;
+    top: 12em;
+    margin-bottom: 30em;
   }
   main .cv-part h2{
   position: absolute;
@@ -285,7 +236,7 @@ main{
     display: flex;
     flex-direction: row;
     position: absolute;
-    width: 100%;
+    width: 50%;
     top: 20em;
     margin: 0 0 0 5%;
     flex-direction: column;
@@ -347,6 +298,9 @@ main{
   }
   /*SCROLL ARROW ANIMATION*/
   .arrows {
+    display: none;
+  }
+  .scroll-container{
     display: none;
   }
 }
