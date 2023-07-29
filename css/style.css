@@ -28,9 +28,6 @@ a{
     text-decoration: none;
     color: black;
 }
-a:hover{
-    color: #315373;
-}
 h1, h2, h3, h4, p{
 font-family: 'Raleway';
 }
@@ -574,17 +571,54 @@ border-radius: 25px;
 box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.63);
 position: absolute;
 left: 45em;
+top: 60em;
 }
 main .scroll-caption h3{
   font-family: 'Merriweather';
   color: #ffffff;
   margin: 0 0 1em 0;
 }
-main .qr-code{
+main .qr-code .qr-image-container{
 width: 120px;
 height: 50px;
 border-radius: 25px;
 position: absolute;
+left: 47em;
+top: 85em;
+}
+.animate-charcter
+{
+  margin: 10em 0 0 7.7em;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #fc6295 67%,
+    #f7ab4d 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 30px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+main .qr-code p{
+  font-family: 'Raleway';
+  font-size: 25px;
+  margin: 10em 0 0 10em;
 }
 main .qr-code img{
   width: 100%;
