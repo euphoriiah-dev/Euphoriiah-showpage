@@ -448,7 +448,7 @@ main .scroll-container{
   align-items: center;
   box-sizing: border-box;
   background-color: #bee2facf;
-  background: linear-gradient(180deg, rgba(99, 232, 255, 0.305) 50%, rgba(148, 188, 233, 0.641) 100%); 
+  background: linear-gradient(180deg, rgb(148, 181, 233) 50%, rgba(252, 235, 255, 0.641) 100%); 
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -506,7 +506,7 @@ object-fit: cover;
 main .slider-button{
   position: absolute;
   left: 8.5em;
-  top: 88em;
+  top: 90em;
   z-index: 4;
 }
 main button{
