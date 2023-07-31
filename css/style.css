@@ -434,9 +434,6 @@ main .socials-links ul li:nth-child(4) a:before {
 }
 
 /*_MAIN & SCROLLING ANIMATION_*/
-main .scroll-container{
-  margin: 25em 0 0 0;
-}
 .scroll-container {
   height: 100vh;
   min-height: 450px;
@@ -448,6 +445,7 @@ main .scroll-container{
   background: linear-gradient(180deg, rgb(148, 181, 233) 50%, rgba(252, 235, 255, 0.641) 100%); 
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin: 25em 0 0 0;
 }
 
 .scroll-container:nth-of-type(1) {
@@ -457,18 +455,13 @@ main .scroll-container{
 .scroll-container:nth-of-type(even) {
 flex-direction: row;
 }
-
-.scroll-element {
-  width: 50%;
-}
-
 .scroll-element {
   width: 280px;
   height: 530px;
   background-color: #e5e1e124;
   border-radius: 1px;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.63);
-  margin: 2em 0 0 5em;
+  margin: -5em 0 0 10em;
 }
 /*_____________________________SLIDESHOW___________________________*/
 main .slider-container{
@@ -502,9 +495,9 @@ object-fit: cover;
 }
 main .slider-button{
   position: absolute;
-  left: 8.5em;
-  top: 90em;
   z-index: 4;
+  top: 92em;
+  right: 69em;
 }
 main button{
   font-family: 'Raleway';
@@ -559,36 +552,46 @@ main .slider-button button p{
 }
 main .scroll-caption p{
 width: 100%;
-overflow-wrap: break-word;
+text-align: center;
+margin: 2em;
 }
 main .scroll-caption{
 border: solid white 1px;
 background-color: rgba(255, 255, 255, 0.338);
 padding: 20px;
-width: 30%;
-height: 20em;
-border-radius: 25px;
 box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.63);
 position: absolute;
 left: 45em;
-top: 60em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+height: 100%;
 }
 main .scroll-caption h3{
   font-family: 'Merriweather';
   color: #ffffff;
   margin: 0 0 1em 0;
 }
-main .qr-code .qr-image-container{
-width: 120px;
-height: 50px;
-border-radius: 25px;
-position: absolute;
-left: 47em;
-top: 85em;
+main .qr-code{
+display: flex;
+flex-direction: column;
+width: 50%;
 }
-.animate-charcter
-{
-  margin: 10em 0 0 7.7em;
+main .qr-code .qr-image-container{
+  width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 5em;
+  margin-bottom: 8em;
+  }
+main .qr-code a{ 
+ width: 40%;
+ align-self: center;
+ margin: 0 0 0 -10%;
+}
+main .animate-character{
    text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
@@ -607,7 +610,8 @@ top: 85em;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-      font-size: 30px;
+  font-size: 30px;
+  position: absolute;
 }
 
 @keyframes textclip {
@@ -672,6 +676,9 @@ main .stuff-container .stuff-icons .photo-icon{
  overflow: hidden;
  transform: scale(1);
  transition: 1s;
+ position: absolute;
+ left: 30.5em;
+ top: 65em;
 }
 main .stuff-container .stuff-icons .photo-icon:hover {
   transform: scale(1.1);
